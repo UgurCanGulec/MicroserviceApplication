@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ticket-microservice
+  cloud:
+    config:
+      profile: native
+      uri: http://localhost:8888
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/j4v4dev
+    username: root
+    password: microservice
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true

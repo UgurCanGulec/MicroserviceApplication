@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: account-microservice
+  cloud:
+    config:
+      profile: native
+      uri: http://localhost:8888

@@ -1,0 +1,18 @@
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    implementation project(':microservice-client')
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client', version: '3.0.3'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.25'
+    implementation group: 'org.springframework.data', name: 'spring-data-elasticsearch', version: '4.2.2'
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-bootstrap', version: '3.0.3'
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-config', version: '3.0.4'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-elasticsearch', version: '2.5.0'
+}
+
+test {
+    useJUnitPlatform()
+}

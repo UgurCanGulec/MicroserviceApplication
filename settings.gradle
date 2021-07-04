@@ -1,0 +1,10 @@
+rootProject.name = 'microservice-application'
+include 'account'
+include 'ticket'
+include 'client'
+
+project(':account').name = 'account-microservice'
+project(':ticket').name = 'ticket-microservice'
+project(':client').name = 'microservice-client'
+
+

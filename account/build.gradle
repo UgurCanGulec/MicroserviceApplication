@@ -1,0 +1,16 @@
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    implementation project(':microservice-client')
+    implementation 'org.springframework.boot:spring-boot-starter-data-cassandra'
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-bootstrap', version: '3.0.3'
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-config', version: '3.0.4'
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client', version: '3.0.3'
+}
+
+test {
+    useJUnitPlatform()
+}
