@@ -2,9 +2,12 @@ rootProject.name = 'microservice-application'
 include 'account'
 include 'ticket'
 include 'client'
+include 'notification'
 
 project(':account').name = 'account-microservice'
 project(':ticket').name = 'ticket-microservice'
 project(':client').name = 'microservice-client'
+project(':notification').name = 'notification-microservice'
+
 
 
